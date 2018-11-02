@@ -1,0 +1,18 @@
+version: 0.2
+
+env:
+  variables:
+    S3_BUCKET: "wrestlerjs.com"
+    NODE_ENV: "production"
+
+phases:
+  pre_build:
+    commands:
+    - npm install
+  build:
+    commands:
+    - npm run build
+  post_build:
+    commands:
+    - aws s3 rm s3://${S3_BUCKET} --recursive
+    - aws s3 cp build s3://${S3_BUCKET} --recursive --cache-control "max-age=300"
