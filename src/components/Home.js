@@ -20,17 +20,22 @@ const Home = ({ classes }) => (
     <Content>
       <ThreeCol className={classes.section}>
         <div>
-          <Typography variant={'h5'} gutterBottom>No code</Typography>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id suscipit tellus. Maecenas placerat consequat commodo. Morbi luctus libero nunc, nec tincidunt nibh viverra
-            nec.</Typography>
-        </div>
-        <div>
-          <Typography variant={'h5'} gutterBottom>No magic</Typography>
-          <Typography>Phasellus ullamcorper mi nulla, vel molestie felis fermentum id. Proin quam tellus, ornare sagittis imperdiet vulputate, rutrum eget purus.</Typography>
+          <Typography variant={'h5'} gutterBottom>Deliver faster</Typography>
+          <Typography>
+            Spend more time on customer facing interactions instead of the API that nobody will see anyway.
+          </Typography>
         </div>
         <div>
           <Typography variant={'h5'} gutterBottom>Deploy anywhere</Typography>
-          <Typography>Maecenas ultrices lacus erat, sit amet mattis odio pellentesque eu. Donec non egestas nibh. Nulla non arcu ac sapien sagittis auctor. Nullam eu magna nibh.</Typography>
+          <Typography>
+            No vendor lock-in because it's just Node.js + Express.
+          </Typography>
+        </div>
+        <div>
+          <Typography variant={'h5'} gutterBottom>RESTful</Typography>
+          <Typography>
+            Uses established practices to make consumption a delight for all your customers.
+          </Typography>
         </div>
       </ThreeCol>
       <Rule/>
